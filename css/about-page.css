@@ -1,0 +1,59 @@
+
+/* Layout */
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "hd hd hd"
+        "mn mn mn"
+        "ft ft ft"
+    ;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    grid-area: hd;
+    background-color: #000;
+    color: #fff;
+}
+
+.main {
+    grid-area: mn;
+    background-color: #f4f4f4;
+}
+
+.footer {
+    grid-area: ft;
+    background-color: #000;
+    color: #fff;
+}
+
+.box {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+/* Text decoration*/
+.link-header {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-header:hover {
+    color: #eaac2c;
+    text-decoration: underline;
+}
+
+.home-text {
+    color: #eaac2c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.footer-text {
+    color: #eaac2c;
+}

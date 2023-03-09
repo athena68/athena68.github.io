@@ -1,0 +1,32 @@
+@media(min-width: 600px) {
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd hd"
+            "sd sd sd mn mn mn mn mn mn"
+            "ft ft ft ft ft ft ft ft ft"
+        ;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        grid-area: hd;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .post-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "tx tx im"
+            "tx tx im"
+            "tx tx ."
+        ;
+    }
+}
